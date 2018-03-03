@@ -200,17 +200,24 @@ class ButtonState extends State<Button> {
 
   void submitPressed() {
     Navigator.of(context).push(
+
       new MaterialPageRoute(
         builder: (context) {
           //what you want page to do
 
           return new Scaffold(
               appBar: new AppBar(
-                  title: new Text('Profile'),
-                  backgroundColor: Colors.blueAccent[400]
+                  title: new Text("Profile", style: new TextStyle(color: Colors.black)),
+                  backgroundColor: Colors.white
               ),
               body: new Container(
-                  decoration: new BoxDecoration(color: Colors.white),
+                  decoration: const BoxDecoration(
+                      //color: Colors.white
+                    image: const DecorationImage(
+                      fit: BoxFit.fill,
+                      image: const AssetImage("images/uabckgrd.jpg"),
+                    ),
+                  ),
                   child: new Center(
                       child: new Column(
                           mainAxisAlignment: MainAxisAlignment.center,
@@ -221,16 +228,16 @@ class ButtonState extends State<Button> {
                             new Text(displayedString, style: new TextStyle(fontSize: 30.0, fontWeight: FontWeight.bold)),
                             new Padding(padding: new EdgeInsets.all(10.0)),
                             new RaisedButton(
-                                child: new Text("Find Ride", style: new TextStyle(color: Colors.white)),
-                                color: Colors.blueAccent[400],
+                                child: new Text("Find Ride"),
+                                color: Colors.white,
                                 onPressed: findRidePressed
                             ),
 
                             new Text(displayedString, style: new TextStyle(fontSize: 30.0, fontWeight: FontWeight.bold)),
                             new Padding(padding: new EdgeInsets.all(10.0)),
                             new RaisedButton(
-                                child: new Text("Give Ride", style: new TextStyle(color: Colors.white)),
-                                color: Colors.blueAccent[400],
+                                child: new Text("Give Ride"),
+                                color: Colors.white,
                                 onPressed: giveRidePressed
                             ),
                           ]
@@ -251,11 +258,17 @@ class ButtonState extends State<Button> {
 
           return new Scaffold(
               appBar: new AppBar(
-                  title: new Text('Find Ride'),
-                  backgroundColor: Colors.blueAccent[400]
+                  title: new Text("Find Ride", style: new TextStyle(color: Colors.black)),
+                  backgroundColor: Colors.white
               ),
               body: new Container(
-                  decoration: new BoxDecoration(color: Colors.white),
+                  decoration: const BoxDecoration(
+                    //color: Colors.white
+                    image: const DecorationImage(
+                      fit: BoxFit.fill,
+                      image: const AssetImage("images/uabckgrd.jpg"),
+                    ),
+                  ),
                   child: new Center(
                       child: new Column(
                           mainAxisAlignment: MainAxisAlignment.center,
@@ -280,11 +293,17 @@ class ButtonState extends State<Button> {
 
           return new Scaffold(
               appBar: new AppBar(
-                  title: new Text('Give Ride'),
-                  backgroundColor: Colors.blueAccent[400]
+                  title: new Text("Give Ride", style: new TextStyle(color: Colors.black)),
+                  backgroundColor: Colors.white
               ),
               body: new Container(
-                  decoration: new BoxDecoration(color: Colors.white),
+                  decoration: const BoxDecoration(
+                    //color: Colors.white
+                    image: const DecorationImage(
+                      fit: BoxFit.fill,
+                      image: const AssetImage("images/uabckgrd.jpg"),
+                    ),
+                  ),
                   child: new Center(
                       child: new Column(
                           mainAxisAlignment: MainAxisAlignment.center,
@@ -367,8 +386,8 @@ class ButtonState extends State<Button> {
                             new Text(displayedString, style: new TextStyle(fontSize: 30.0, fontWeight: FontWeight.bold)),
                             new Padding(padding: new EdgeInsets.all(10.0)),
                             new RaisedButton(
-                                child: new Text("Submit Ride", style: new TextStyle(color: Colors.white)),
-                                color: Colors.blueAccent[400],
+                                child: new Text("Submit Ride"),
+                                color: Colors.white,
                                 onPressed: submitRidePressed
                             ),
                           ]
@@ -390,11 +409,17 @@ class ButtonState extends State<Button> {
 
           return new Scaffold(
               appBar: new AppBar(
-                  title: new Text('Your Ride Info'),
-                  backgroundColor: Colors.blueAccent[400]
+                  title: new Text("Your Ride Info", style: new TextStyle(color: Colors.black)),
+                  backgroundColor: Colors.white
               ),
               body: new Container(
-                  decoration: new BoxDecoration(color: Colors.white),
+                  decoration: const BoxDecoration(
+                    //color: Colors.white
+                    image: const DecorationImage(
+                      fit: BoxFit.fill,
+                      image: const AssetImage("images/uabckgrd.jpg"),
+                    ),
+                  ),
                   child: new Center(
                       child: new Column(
                           mainAxisAlignment: MainAxisAlignment.center,
