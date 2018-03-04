@@ -105,6 +105,7 @@ class ButtonState extends State<Button> {
                       child: new Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: <Widget>[
+
                             new TextField(
                                 decoration: new InputDecoration(
                                     hintText: "First Name"
@@ -140,15 +141,15 @@ class ButtonState extends State<Button> {
                                     hintText: "School"
                                 ),
 
-                                onSubmitted: null /* {  //FIX ME I NEED TO GO TO EXCEL
+                                onSubmitted: (String str) {
                                   setState(() {
-                                    result = loginstr;
+                                    result = str;
                                   });
                                 controller.text = "";
                               },
-                             controller: controller */
+                             controller: controller
                             ),
-                            //new Text(result)
+
 
                             new TextField(
                                 decoration: new InputDecoration(
@@ -212,7 +213,7 @@ class ButtonState extends State<Button> {
               ),
               body: new Container(
                   decoration: const BoxDecoration(
-                      //color: Colors.white
+                    //color: Colors.white
                     image: const DecorationImage(
                       fit: BoxFit.fill,
                       image: const AssetImage("images/uabckgrd.jpg"),
@@ -273,7 +274,7 @@ class ButtonState extends State<Button> {
                       child: new Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: <Widget>[
-                            new Text("Rides show here"),
+                            new Text("Rides show here", style: new TextStyle(color: Colors.white)),
                           ]
                       )
                   )
@@ -309,9 +310,14 @@ class ButtonState extends State<Button> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: <Widget>[
                             new TextField(
-                                decoration: new InputDecoration(
-                                    hintText: "Where are you going? (City, State)"
+
+                                style: new TextStyle(color: Colors.white),
+                                decoration:
+                                new InputDecoration(
+                                    hintText: "Where are you going? (City, State)",
+
                                 ),
+
 
                                 onSubmitted: null /* {  //FIX ME I NEED TO GO TO EXCEL
                                   setState(() {
@@ -324,6 +330,7 @@ class ButtonState extends State<Button> {
                             //new Text(result)
 
                             new TextField(
+                                style: new TextStyle(color: Colors.white),
                                 decoration: new InputDecoration(
                                     hintText: "How many people can you take?"
                                 ),
@@ -339,6 +346,7 @@ class ButtonState extends State<Button> {
                             //new Text(result)
 
                             new TextField(
+                                style: new TextStyle(color: Colors.white),
                                 decoration: new InputDecoration(
                                     hintText: "When are you leaving?"
                                 ),
@@ -354,6 +362,7 @@ class ButtonState extends State<Button> {
                             //new Text(result)
 
                             new TextField(
+                                style: new TextStyle(color: Colors.white),
                                 decoration: new InputDecoration(
                                     hintText: "What color and type of car will you be driving?"
                                 ),
@@ -369,6 +378,7 @@ class ButtonState extends State<Button> {
                             //new Text(result)
 
                             new TextField(
+                                style: new TextStyle(color: Colors.white),
                                 decoration: new InputDecoration(
                                     hintText: "Where should everyone meet you?"
                                 ),
